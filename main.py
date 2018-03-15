@@ -1,4 +1,5 @@
-import pygame
+import pygame, importlib
+from Character import Character
 
 pygame.init()
 
@@ -8,7 +9,8 @@ WHITE = (255, 255, 255)
 window = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Tristram')
 window.fill(GREEN)
-pygame.draw.rect(window, WHITE, (200, 200, 100, 50))
+sherman = Character(3.0, 1.0, 1.0)
+sherman.drawCharacter()
 pygame.display.flip()
 
 running = True
@@ -17,6 +19,6 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-#adding new test comment here#
-#added comment anthony#
-#test comment from laptop - Joe#
+#adding new test comment here
+#added comment anthony
+#test comment from laptop - Joe
