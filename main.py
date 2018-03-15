@@ -1,7 +1,9 @@
-import pygame
+import pygame, importlib
+from runGame import runGame
 
-pygame.init()
+runGame()
 
+<<<<<<< HEAD
 GREEN = (0, 170, 100)
 WHITE = (255, 255, 255)
 
@@ -20,3 +22,8 @@ while running:
 #adding new test comment here#
 #added comment anthony#
 #branch update#
+=======
+#adding new test comment here
+#added comment anthony
+#test comment from laptop - Joe
+>>>>>>> master
