@@ -1,9 +1,7 @@
-import pygame, importlib
+import pygame, importlib, runGame
 
 class Character:
     #Base class for player character
-
-    window = pygame.display.set_mode((800, 600))
 
     def __init__(self, hp, speed, damage):
         self.hp = 3.0
