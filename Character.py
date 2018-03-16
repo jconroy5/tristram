@@ -8,5 +8,5 @@ class Character:
         self.speed = 1.0
         self.damage = 1.0
 
-    def drawCharacter(self):
-        pygame.draw.rect(window, WHITE, (200, 200, 100, 50))
+    def drawCharacter(self, window, color):
+        pygame.draw.rect(window, color, (200, 200, 100, 50))

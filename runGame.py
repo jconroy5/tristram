@@ -1,19 +1,19 @@
 import pygame, importlib, Character
 from Character import Character
 
+GREEN = (0, 170, 100)
+WHITE = (255, 255, 255)
+
 class runGame:
     def __init__(self):
         pygame.init()
-
-        GREEN = (0, 170, 100)
-        WHITE = (255, 255, 255)
 
         window = pygame.display.set_mode((800, 600))
         pygame.display.set_caption('Tristram')
         window.fill(GREEN)
 
         sherman = Character(3.0, 1.0, 1.0)
-        sherman.drawCharacter()
+        sherman.drawCharacter(window, WHITE)
         pygame.display.flip()
 
         running = True
