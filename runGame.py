@@ -39,7 +39,7 @@ def show_start_screen(window):
                     sys.exit()
 
 
-def playerMove
+def playerMove(player_speed, location)
 
 def textRender(surface, text, size, x, y):
     font_match = pygame.font.match_font('terminal')
