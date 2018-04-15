@@ -1,10 +1,17 @@
-<<<<<<< current
-class Player(object):
+import pygame
 
-    def __init__(self, hp, speed, damage):
-        self.hp = hp
-        self.speed = speed
-        self.damage = damage
+class Player(pygame.sprite.Sprite):
+
+    def __init__(self, winWidth, winHeight, color):
+        pygame.sprite.Sprite._init_(self)
+        self.image = pygame.Surface
+        self.hp = 10.0
+        self.speed = 1.0
+        self.damage = 1.0
+        self.image = pygame.Surface((30,30))
+        self.image.fill(color)
+        self.rect = self.image.get_rect()
+        self.rect.center = (winWidth / 2, winHeight / 2)
 
     def get_hp(self):
         return self.hp
@@ -34,17 +41,3 @@ class Enemy(object):
 
     def get_damage(self):
         return self.damage
-=======
-import pygame, importlib, runGame
-
-class Character:
-    #Base class for player character
-
-    def __init__(self, hp, speed, damage):
-        self.hp = 3.0
-        self.speed = 1.0
-        self.damage = 1.0
-
-    def drawCharacter(self, window, color):
-        pygame.draw.rect(window, color, (200, 200, 100, 50))
->>>>>>> before discard
