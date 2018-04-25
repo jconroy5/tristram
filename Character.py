@@ -2,16 +2,21 @@ import pygame
 
 class Player(pygame.sprite.Sprite):
 
-    def __init__(self, winWidth, winHeight, color):
-        pygame.sprite.Sprite._init_(self)
+    def __init__(self, winWidth, winHeight, image):
+        pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface
         self.hp = 10.0
-        self.speed = 1.0
+        self.speed = 4.0
         self.damage = 1.0
-        self.image = pygame.Surface((30,30))
-        self.image.fill(color)
+        self.image = image
         self.rect = self.image.get_rect()
-        self.rect.center = (winWidth / 2, winHeight / 2)
+        self.x = winWidth / 2
+        self.y = winHeight / 2
+        self.rect.center = (self.x, self.y)
+
+    #def moveBody(self, direction):
+
+    #def moveHead(self, direction):
 
     def get_hp(self):
         return self.hp
