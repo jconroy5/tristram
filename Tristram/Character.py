@@ -5,7 +5,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, winWidth, winHeight, image):
         pygame.sprite.Sprite.__init__(self)
         self.hp = 10.0
-        self.speed = 0.5
+        self.speed = 0.3
         self.damage = 1.0
         self.image = image
         self.rect = self.image.get_rect()
