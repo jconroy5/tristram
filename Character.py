@@ -9,9 +9,10 @@ class Player(pygame.sprite.Sprite):
         self.damage = 1.0
         self.image = image
         self.rect = self.image.get_rect()
-        self.x = winWidth / 2
-        self.y = winHeight / 2
-        self.rect.center = (self.x, self.y)
+        self.x = (winWidth / 2) - 61
+        self.y = (winHeight / 2) - 61
+        self.rect.center = (self.x + 61, self.y + 61)
+
 
     #def moveBody(self, direction):
 
@@ -30,12 +31,19 @@ class Player(pygame.sprite.Sprite):
 
     # def move_player(self, speed):
 
-class Enemy(object):
+class Enemy(pygame.sprite.Sprite):
 
-    def __init__(self, hp, speed, damage):
-        self.hp = hp
-        self.speed = speed
-        self.damage = damage
+    def __init__(self, winWidth, winHeight, image):
+        pygame.sprite.Sprite.__init__(self)
+        self.hp = 10.0
+        self.speed = 0.5
+        self.damage = 1.0
+        self.image = image
+        self.rect = self.image.get_rect()
+        self.x = (winWidth / 2) - 61
+        self.y = (winHeight / 2) - 61
+        self.rect.center = (self.x + 61, self.y + 61)
+
 
     def get_hp(self):
         return self.hp
