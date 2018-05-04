@@ -1,4 +1,10 @@
-# tristram
+Final Report for COMP 388/488: https://docs.google.com/document/d/1IHxrWJRM8Q-Ep7kYrTry-WGRYwR7dCSz5FTPKEcIEMM/edit?usp=sharing
+
+# 75 MM
+
+A Game by Anthony Soto and Joe Conroy
+
+# Codename: Tristram
 COMP 388 Project
 
 Language: Python and Pygame
